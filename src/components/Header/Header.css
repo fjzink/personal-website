@@ -1,0 +1,32 @@
+.profile-pic {
+  display: block;
+  border-radius: 50%;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10%;
+}
+
+.Header {
+  background: #8cffd3;
+}
+
+.name-title {
+  padding-top: 8%;
+  margin: 0 auto;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+}
+
+@media only screen and (min-width: 750px) {
+  .name-title {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 3em;
+  }
+
+  .profile-pic {
+    padding: 2%;
+    width: 30%;
+  }
+}

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import BurgerNav from './BurgerNav';
-import About from './About/About'
+import Header from './Header/Header'
 
 class Mobile extends Component {
   render() {
     return(
       <div className="Mobile">
         <BurgerNav />
-        <About />
+        <Header />
       </div>
     );
   }
