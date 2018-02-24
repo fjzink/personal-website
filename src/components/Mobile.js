@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import BurgerNav from './BurgerNav';
 import Header from './Header/Header';
 import About from './About/About';
+import Skills from './Skills/Skills';
 
 class Mobile extends Component {
   render() {
@@ -10,6 +11,7 @@ class Mobile extends Component {
         <BurgerNav />
         <Header />
         <About />
+        <Skills />
       </div>
     );
   }
