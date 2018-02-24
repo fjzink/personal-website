@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { stack as Menu } from 'react-burger-menu';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import { faEnvelope, faUser, faBriefcase, faListUl } from '@fortawesome/fontawesome-free-solid/'
+import { faEnvelope, faUser, faBriefcase, faListUl } from '@fortawesome/fontawesome-free-solid/';
 import './BurgerNav.css';
 
 class BurgerNav extends Component {
