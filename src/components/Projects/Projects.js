@@ -7,7 +7,7 @@ import './Projects.css';
 class Projects extends Component {
   render() {
     return(
-      <div className="Projects">
+      <div className="Projects" id="projects-section">
         <SectionTitle><FontAwesomeIcon icon={faBriefcase} /> Projects</SectionTitle>
       </div>
     );

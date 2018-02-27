@@ -19,7 +19,7 @@ class Skills extends Component {
 
   render() {
     return(
-      <div className="Skills">
+      <div className="Skills" id="skills-section">
         <SectionTitle><FontAwesomeIcon icon={faListUl} /> Skills</SectionTitle>
         <div className="skill-lists">
           <SkillsList title="Proficient">
