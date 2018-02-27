@@ -7,7 +7,7 @@ import './Contact.css';
 class Contact extends Component {
   render() {
     return(
-      <div className="Contact">
+      <div className="Contact" id="contact-section">
         <SectionTitle><FontAwesomeIcon icon={faEnvelope} /> Contact</SectionTitle>
       </div>
     );

@@ -1,5 +1,11 @@
 .nav-link {
   font-size: 1.5em;
+  color: #b8b7ad;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
 }
 
 .bm-burger-button {
@@ -25,14 +31,12 @@
 
 .bm-menu {
   background: #373a47;
-  /*background: #010087;*/
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
 
 .bm-morph-shape {
   fill: #373a47;
-  /*fill: #010087;*/
 }
 
 .bm-item-list {

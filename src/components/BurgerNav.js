@@ -5,13 +5,25 @@ import { faEnvelope, faUser, faBriefcase, faListUl } from '@fortawesome/fontawes
 import './BurgerNav.css';
 
 class BurgerNav extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      menuOpen: false
+    };
+  }
+
+  closeMenu() {
+    this.setState({menuOpen: false});
+  }
+
   render() {
     return(
-      <Menu pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } >
-        <a className={"nav-link"}><FontAwesomeIcon icon={faUser} /> About</a>
-        <a className={"nav-link"}><FontAwesomeIcon icon={faListUl} /> Skills</a>
-        <a className={"nav-link"}><FontAwesomeIcon icon={faBriefcase} /> Projects</a>
-        <a className={"nav-link"}><FontAwesomeIcon icon={faEnvelope} /> Contact</a>
+      <Menu isOpen={this.state.menuOpen} >
+        <a onClick={() => this.closeMenu()} className={"nav-link"} href={"#about-section"}><FontAwesomeIcon icon={faUser} /> About</a>
+        <a onClick={() => this.closeMenu()} className={"nav-link"} href={"#skills-section"}><FontAwesomeIcon icon={faListUl} /> Skills</a>
+        <a onClick={() => this.closeMenu()} className={"nav-link"} href={"#projects-section"}><FontAwesomeIcon icon={faBriefcase} /> Projects</a>
+        <a onClick={() => this.closeMenu()} className={"nav-link"} href={"#contact-section"}><FontAwesomeIcon icon={faEnvelope} /> Contact</a>
       </Menu>
     );
   }
