@@ -5,3 +5,14 @@
   padding-top: .25%;
   background: #8cffd3;
 }
+
+.skill-lists {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 750px) {
+  .skill-lists {
+    flex-direction: row;
+  }
+}
