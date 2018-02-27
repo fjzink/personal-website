@@ -21,21 +21,23 @@ class Skills extends Component {
     return(
       <div className="Skills">
         <SectionTitle><FontAwesomeIcon icon={faListUl} /> Skills</SectionTitle>
-        <SkillsList title="Proficient">
-          {this.state.proficient.map((skill, index) => {
-            return(<FAListItem key={index.toString()} >{skill}</FAListItem>)
-          })}
-        </SkillsList>
-        <SkillsList title="Exposure">
-          {this.state.exposure.map((skill, index) => {
-            return(<FAListItem key={index.toString()} >{skill}</FAListItem>)
-          })}
-        </SkillsList>
-        <SkillsList title="Professional">
-          {this.state.professional.map((skill, index) => {
-            return(<FAListItem key={index.toString()} >{skill}</FAListItem>)
-          })}
-        </SkillsList>
+        <div className="skill-lists">
+          <SkillsList title="Proficient">
+            {this.state.proficient.map((skill, index) => {
+              return(<FAListItem key={index.toString()} >{skill}</FAListItem>)
+            })}
+          </SkillsList>
+          <SkillsList title="Exposure">
+            {this.state.exposure.map((skill, index) => {
+              return(<FAListItem key={index.toString()} >{skill}</FAListItem>)
+            })}
+          </SkillsList>
+          <SkillsList title="Professional">
+            {this.state.professional.map((skill, index) => {
+              return(<FAListItem key={index.toString()} >{skill}</FAListItem>)
+            })}
+          </SkillsList>
+        </div>
       </div>
     );
   }
