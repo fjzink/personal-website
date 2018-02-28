@@ -5,3 +5,38 @@
   padding-top: .25%;
   background: #8cffd3;
 }
+
+.contact-info {
+  padding-left: 2%;
+  font-size: 1.15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.contact-icon {
+  font-size: 1.35em;
+}
+
+.link-style {
+  color: black;
+  text-decoration: none;
+  padding-bottom: 3%;
+}
+
+.link-style:hover {
+  border-bottom: #fc6c0c 2px solid;
+  color: #fc6c0c;
+}
+
+@media only screen and (min-width: 750px) {
+  .contact-info {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .link-style {
+    padding-bottom: 0%;
+  }
+}
