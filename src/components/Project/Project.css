@@ -1,4 +1,22 @@
 .Project {
-  border: 2% solid black;
-  border-radius: 5%;
+  border: .1em solid black;
+  border-radius: .75em;
+  padding:1%;
+}
+
+.project-title {
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid black;
+  width: 50%;
+  font-size: 1.2em;
+}
+
+.project-header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project-image {
+  padding-top: 2%;
 }
