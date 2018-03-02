@@ -11,9 +11,9 @@ class Project extends Component {
           <a href={"https://github.com/fjzink/RoadWarriors-Frontend"}><img className={"project-image"} src={this.props.image} alt={""}/></a>
         </div>
         <ul className={"fa-ul"}>
-          <FAListItem>First Item this is a test to see what it looks like.</FAListItem>
-          <FAListItem>Second Item this is also a test.</FAListItem>
-          <FAListItem>Third Item omg another test are you crazy?!?!?</FAListItem>
+          {this.props.description.map((listItem) => {
+            return <FAListItem>{listItem}</FAListItem>;
+          })}
         </ul>
       </div>
     );
