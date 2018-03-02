@@ -22,7 +22,12 @@ class Projects extends Component {
             "This native mobile app is decoupled with a JSON API back end built with Ruby on Rails, and a front end built with React Native.",
             "Multiple APIs were used to get data including the Google Maps API, Google Places API, and the Yelp API."
           ],
-          image: rwpic
+          image: rwpic,
+          imageLink: "https://github.com/fjzink/RoadWarriors-Frontend",
+          githubLink: [
+            {text: "Frontend Repo", url: "https://github.com/fjzink/RoadWarriors-Frontend"},
+            {text: "Backend Repo", url: "https://github.com/fjzink/RoadWarriors-Backend"}
+          ]
         },
         eliteskills: {
           description: [
@@ -32,7 +37,12 @@ class Projects extends Component {
             "The frontend user interface is built using React, and the backend is a JSON API built using Ruby on Rails.",
             "Data visualization for skills is created using the Victory library by Formidable, and the UI was made using Bootstrap."
           ],
-          image: espic
+          image: espic,
+          imageLink: "https://github.com/fjzink/Elite-Skills-Frontend",
+          githubLink: [
+            {text: "Frontend Repo", url: "https://github.com/fjzink/Elite-Skills-Frontend"},
+            {text: "Backend Repo", url: "https://github.com/fjzink/Elite-Skills-API"}
+          ]
         },
         thiswebsite: {
           description: [
@@ -41,7 +51,11 @@ class Projects extends Component {
             "The navigation menu was created using the react-burger-menu npm module.",
             "The Animate.css library was used to add animations to the header section of the site."
           ],
-          image: websitepic
+          image: websitepic,
+          imageLink: "https://github.com/fjzink/personal-website",
+          githubLink: [
+            {text: "Github Repo", url: "https://github.com/fjzink/personal-website"}
+          ]
         },
         nigel: {
           description: [
@@ -50,7 +64,11 @@ class Projects extends Component {
             "There are teacher and student user accounts each with different levels of authorization.",
             "The web app was created using Ruby on Rails and uses PostgreSQL for the database."
           ],
-          image: nigelpic
+          image: nigelpic,
+          imageLink: "https://github.com/fjzink/Nigel",
+          githubLink: [
+            {text: "Github Repo", url: "https://github.com/fjzink/Nigel"}
+          ]
         }
     };
   }
@@ -65,12 +83,16 @@ class Projects extends Component {
               title={"RoadWarriors"}
               image={this.state.roadwarriors.image}
               description={this.state.roadwarriors.description}
+              imageLink={this.state.roadwarriors.imageLink}
+              githubLink={this.state.roadwarriors.githubLink}
             />
             <Project
               id={"eliteskills"}
               title={"Elite Skills"}
               image={this.state.eliteskills.image}
               description={this.state.eliteskills.description}
+              imageLink={this.state.eliteskills.imageLink}
+              githubLink={this.state.eliteskills.githubLink}
             />
           </div>
           <div className={"second-row"}>
@@ -78,11 +100,15 @@ class Projects extends Component {
               title={"This Website"}
               image={this.state.thiswebsite.image}
               description={this.state.thiswebsite.description}
+              imageLink={this.state.thiswebsite.imageLink}
+              githubLink={this.state.thiswebsite.githubLink}
             />
             <Project
               title={"Nigel"}
               image={this.state.nigel.image}
               description={this.state.nigel.description}
+              imageLink={this.state.nigel.imageLink}
+              githubLink={this.state.nigel.githubLink}
             />
           </div>
         </div>
