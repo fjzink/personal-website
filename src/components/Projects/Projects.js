@@ -60,7 +60,7 @@ class Projects extends Component {
         },
         nigel: {
           description: [
-            "Nigel is web app designed for use in education that allows people to share resources.",
+            "Nigel is a web app designed for use in education that allows people to share resources.",
             "Resources can be tagged with a hashtag so that they can be categorized.",
             "There are teacher and student user accounts each with different levels of authorization.",
             "The web app was created using Ruby on Rails and uses PostgreSQL for the database."
