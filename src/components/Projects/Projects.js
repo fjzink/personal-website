@@ -50,7 +50,8 @@ class Projects extends Component {
             "This is my personal webite that I created using React.",
             "I used Font Awesome's icons as well as their React library to add the SVG icons to my site.",
             "The navigation menu was created using the react-burger-menu npm module.",
-            "The Animate.css library was used to add animations to the header section of the site."
+            "The Animate.css library was used to add animations to the header section of the site.",
+            "I used the react-reveal npm module to add the reveal animations for the projects section."
           ],
           image: websitepic,
           imageLink: "https://github.com/fjzink/personal-website",
