@@ -21,6 +21,10 @@
   }
 
   .Project {
-    max-width: 46%;
+    max-width: 100%;
+  }
+
+  .flip-comp {
+    width: 48%;
   }
 }
