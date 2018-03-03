@@ -3,6 +3,7 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import Project from '../Project/Project';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/fontawesome-free-solid/';
+import { Fade } from 'react-reveal';
 import rwpic from './roadwarriors.png';
 import espic from './eliteskills.png';
 import websitepic from './mywebsite.jpg';
@@ -79,37 +80,53 @@ class Projects extends Component {
         <SectionTitle><FontAwesomeIcon icon={faBriefcase} /> Projects</SectionTitle>
         <div className={"project-rows"}>
           <div className={"first-row"}>
-            <Project
-              title={"RoadWarriors"}
-              image={this.state.roadwarriors.image}
-              description={this.state.roadwarriors.description}
-              imageLink={this.state.roadwarriors.imageLink}
-              githubLink={this.state.roadwarriors.githubLink}
-            />
-            <Project
-              id={"eliteskills"}
-              title={"Elite Skills"}
-              image={this.state.eliteskills.image}
-              description={this.state.eliteskills.description}
-              imageLink={this.state.eliteskills.imageLink}
-              githubLink={this.state.eliteskills.githubLink}
-            />
+            <div className={"flip-comp"}>
+            <Fade duration={2000}>
+              <Project
+                title={"RoadWarriors"}
+                image={this.state.roadwarriors.image}
+                description={this.state.roadwarriors.description}
+                imageLink={this.state.roadwarriors.imageLink}
+                githubLink={this.state.roadwarriors.githubLink}
+              />
+            </Fade>
+            </div>
+            <div className={"flip-comp"}>
+            <Fade duration={2000}>
+              <Project
+                id={"eliteskills"}
+                title={"Elite Skills"}
+                image={this.state.eliteskills.image}
+                description={this.state.eliteskills.description}
+                imageLink={this.state.eliteskills.imageLink}
+                githubLink={this.state.eliteskills.githubLink}
+              />
+            </Fade>
+            </div>
           </div>
           <div className={"second-row"}>
-            <Project
-              title={"This Website"}
-              image={this.state.thiswebsite.image}
-              description={this.state.thiswebsite.description}
-              imageLink={this.state.thiswebsite.imageLink}
-              githubLink={this.state.thiswebsite.githubLink}
-            />
-            <Project
-              title={"Nigel"}
-              image={this.state.nigel.image}
-              description={this.state.nigel.description}
-              imageLink={this.state.nigel.imageLink}
-              githubLink={this.state.nigel.githubLink}
-            />
+            <div className={"flip-comp"}>
+            <Fade duration={2000}>
+              <Project
+                title={"This Website"}
+                image={this.state.thiswebsite.image}
+                description={this.state.thiswebsite.description}
+                imageLink={this.state.thiswebsite.imageLink}
+                githubLink={this.state.thiswebsite.githubLink}
+              />
+            </Fade>
+            </div>
+            <div className={"flip-comp"}>
+            <Fade duration={2000}>
+              <Project
+                title={"Nigel"}
+                image={this.state.nigel.image}
+                description={this.state.nigel.description}
+                imageLink={this.state.nigel.imageLink}
+                githubLink={this.state.nigel.githubLink}
+              />
+            </Fade>
+            </div>
           </div>
         </div>
       </div>
