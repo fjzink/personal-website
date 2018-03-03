@@ -3,7 +3,7 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import Project from '../Project/Project';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/fontawesome-free-solid/';
-import { Fade } from 'react-reveal';
+import { Flip } from 'react-reveal';
 import rwpic from './roadwarriors.png';
 import espic from './eliteskills.png';
 import websitepic from './mywebsite.jpg';
@@ -81,7 +81,7 @@ class Projects extends Component {
         <div className={"project-rows"}>
           <div className={"first-row"}>
             <div className={"flip-comp"}>
-            <Fade duration={2000}>
+            <Flip left duration={1500}>
               <Project
                 title={"RoadWarriors"}
                 image={this.state.roadwarriors.image}
@@ -89,10 +89,10 @@ class Projects extends Component {
                 imageLink={this.state.roadwarriors.imageLink}
                 githubLink={this.state.roadwarriors.githubLink}
               />
-            </Fade>
+            </Flip>
             </div>
             <div className={"flip-comp"}>
-            <Fade duration={2000}>
+            <Flip left duration={1500}>
               <Project
                 id={"eliteskills"}
                 title={"Elite Skills"}
@@ -101,12 +101,12 @@ class Projects extends Component {
                 imageLink={this.state.eliteskills.imageLink}
                 githubLink={this.state.eliteskills.githubLink}
               />
-            </Fade>
+            </Flip>
             </div>
           </div>
           <div className={"second-row"}>
             <div className={"flip-comp"}>
-            <Fade duration={2000}>
+            <Flip left duration={1500}>
               <Project
                 title={"This Website"}
                 image={this.state.thiswebsite.image}
@@ -114,10 +114,10 @@ class Projects extends Component {
                 imageLink={this.state.thiswebsite.imageLink}
                 githubLink={this.state.thiswebsite.githubLink}
               />
-            </Fade>
+            </Flip>
             </div>
             <div className={"flip-comp"}>
-            <Fade duration={2000}>
+            <Flip left duration={1500}>
               <Project
                 title={"Nigel"}
                 image={this.state.nigel.image}
@@ -125,7 +125,7 @@ class Projects extends Component {
                 imageLink={this.state.nigel.imageLink}
                 githubLink={this.state.nigel.githubLink}
               />
-            </Fade>
+            </Flip>
             </div>
           </div>
         </div>
