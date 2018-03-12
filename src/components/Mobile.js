@@ -12,9 +12,9 @@ class Mobile extends Component {
       <div className="Mobile">
         <BurgerNav />
         <Header />
-        <About />
         <Skills />
         <Projects />
+        <About />
         <Contact />
       </div>
     );

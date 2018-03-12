@@ -6,7 +6,8 @@ class Header extends Component {
     return(
       <div className="Header">
         <h1 className={"name-title animated bounceInLeft"}>Joey Zink</h1>
-        <img src={require('./joey.png')} alt={"joey"} className={"profile-pic animated bounceInLeft"}/>
+        <img src={require('./joey2.jpg')} alt={"joey"} className={"profile-pic animated bounceInLeft"}/>
+        <p className={"job-title animated bounceInLeft"}>Sofware Engineer</p>
       </div>
     );
   }
