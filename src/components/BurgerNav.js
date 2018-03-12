@@ -21,9 +21,9 @@ class BurgerNav extends Component {
     return(
       <Menu isOpen={this.state.menuOpen} >
         <a onClick={() => this.closeMenu()} className={"nav-link"} href={"#top"}><FontAwesomeIcon icon={faHome} /> Home</a>
-        <a onClick={() => this.closeMenu()} className={"nav-link"} href={"#about-section"}><FontAwesomeIcon icon={faUser} /> About</a>
         <a onClick={() => this.closeMenu()} className={"nav-link"} href={"#skills-section"}><FontAwesomeIcon icon={faListUl} /> Skills</a>
         <a onClick={() => this.closeMenu()} className={"nav-link"} href={"#projects-section"}><FontAwesomeIcon icon={faBriefcase} /> Projects</a>
+        <a onClick={() => this.closeMenu()} className={"nav-link"} href={"#about-section"}><FontAwesomeIcon icon={faUser} /> About</a>
         <a onClick={() => this.closeMenu()} className={"nav-link"} href={"#contact-section"}><FontAwesomeIcon icon={faEnvelope} /> Contact</a>
       </Menu>
     );
